@@ -28,6 +28,7 @@ This Module Does
 This Module Does **NOT**
 ------------------------
 * Encode or decode access token, i.e. JWT (This should be done at server-side)
+* Do anything until you catch `ahth-required` message AND use it
 * For server-side implementation with NodeJS/Express, please refer [this example](https://gist.github.com/allenhwkim/911e6dd6dbc1da197918)
 
 Install
