@@ -108,7 +108,7 @@ Use `Auth.get('token')` or `Auth.get(YOUR-VARIABLE)` to check if the user is log
       </div>
     </div>
 
-#### Limitted Role-Based Section ####
+#### Role-Only Section ####
 
 Use `Auth.permittedTo(ROLE)` method to check if the user has the given role or not
 
