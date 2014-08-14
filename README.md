@@ -1,4 +1,4 @@
-augularjs-auth
+angularjs-auth
 ==============
 
 Role-Based Angular JS Client-Side Authentication and Authorization Module
