@@ -18,10 +18,10 @@ This Module Does
 
 * Broadcast a message from $rootScope whenever;
 
-  * user access a route which is defined with `authRequired`
-  * user received 401 response from server
+  * accessed a route defined with `authRequired` without login
+  * received 401 response from http requests
   
-* Provides methods to access window.sessionStorage auth. data
+* Provides methods to access the related window.sessionStorage data
 
   * Auth.create(data), to save credentials
   * Auth.destroy(), to delete all credentials
