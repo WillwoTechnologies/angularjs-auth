@@ -73,7 +73,7 @@ Usage
 ------
 #### Login ####
 
-1. Whenever login is required, you receive `auth-required` message, then you show login page to users as follows
+1. Whenever login is required, you receive `auth-required` message, then you show login page to users as follows. It's your decision what to do with this message; redirect to login page, show login section, or show alert message.
 
         $scope.$on("auth-required", function(event, reason) {
           $location.url("/login?redir=" + encodeURIComponent(reason.route.originalPath) );
