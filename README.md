@@ -46,8 +46,8 @@ Install
         var app = angular.module('myapp', ['ngRoute', 'angularjsAuth']);
 
 2. Add `authRequired` with the value of required role to your route config.
-  and, register $http interceptor, `AuthInterceptor` to set `x-access-token` for all http requests
-  and to broadcast `auth-required` event for all errored http responses,401(Unauthorized)
+  and, register $http interceptor, `AuthInterceptor`, to set `x-access-token` for all http requests
+  and to broadcast `auth-required` event for all errored http responses, 401(Unauthorized)
   
       app.config(function($routeProvider) {
         $routeProvider
