@@ -14,25 +14,25 @@ Example
 This Module Does
 ----------------
 
-* Set `x-access-token` for all http requests
+* Set auth. token to all http requests header once logged in 
 
-* Broadcast `auth-required` message whenever; 
+* Broadcast a message from $rootScope whenever;
 
   * user access a route which is defined with `authRequired`
   * user received 401 response from server
   
-* Provides Auth object to access window.sessionStorage auth. data
+* Provides methods to access window.sessionStorage auth. data
 
-  * Auth.create(data), to save
-  * Auth.destroy(), to delete
-  * Auth.permittedTo(role), to check if the current user has this role
+  * Auth.create(data), to save credentials
+  * Auth.destroy(), to delete all credentials
+  * Auth.permittedTo(role), to check if the current user has the given role
   * Auth.get(key), to retrieve auth data
 
 This Module Does **NOT**
 ------------------------
 * Encode or decode access token, i.e. JWT (This should be done at server-side)
 * Do anything until you catch `ahth-required` message AND use it
-* For server-side implementation with NodeJS/Express, please refer [this example](https://gist.github.com/allenhwkim/911e6dd6dbc1da197918)
+* For server-side implementation with Node/Express, please refer [this example](https://gist.github.com/allenhwkim/911e6dd6dbc1da197918)
 
 Install
 ---------
