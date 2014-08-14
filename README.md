@@ -5,8 +5,9 @@ Role-Based Angular JS Client-Side Authentication and Authorization Module
 
 Example
 --------
-
-<a href="http://plnkr.co/edit/BNg4vEMBA1X2aawHtMU8?p=preview"><img src="http://i.imgur.com/Gw4bTpN.png" align="center" border="1"/></a>
+<dl>
+<a href="http://plnkr.co/edit/BNg4vEMBA1X2aawHtMU8?p=preview"><img src="http://i.imgur.com/Gw4bTpN.png" align="center" /></a>
+</dl>
 
 
 This Module Does
