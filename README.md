@@ -15,7 +15,7 @@ This Module Does
 
 * Broadcast `auth-required` message whenever; 
 
-  * user access a route without login
+  * user access a route which is defined with `authRequired`
   * user received 401 response from server
   
 * Provides Auth object to access window.sessionStorage auth. data
