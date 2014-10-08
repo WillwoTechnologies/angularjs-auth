@@ -103,13 +103,13 @@ You simply invoke `Auth.destroy()` method
 
 #### Login/Logout Links Section ####
 
-Use `Auth.get('token')` or `Auth.get(YOUR-VARIABLE)` to check if the user is logged in or not
+Use `Auth.isLoggedIn()` to check if the user is logged in or not
 
     <div ng-controller="MyController">
-      <div ng-if="Auth.get('username')">
+      <div ng-if="Auth.isLoggedIn()">
         Hello, {{Auth.get('username')}} <a ng-href="#/login" ng-click="logoff()">logoff</a>
       </div>
-      <div ng-if="!Auth.get('username')">
+      <div ng-if="!Auth.isLoggedIn()">
         <a ng-href="#/login">Login</a>
       </div>
     </div>
