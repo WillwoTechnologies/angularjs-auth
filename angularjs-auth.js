@@ -65,8 +65,12 @@ angular.module('angularjsAuth', [])
     }
     
     this.isLoggedIn = function() {
-      var authKey = "auth-" + key;
-      return Object.keys($window.sessionStorage).length;
+      for (var key in $window.sessionStorage) {
+       if (key.match(/^auth-/)){
+        return true;
+       }
+      }
+      return false;
     }
     
     /**
