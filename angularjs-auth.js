@@ -64,6 +64,11 @@ angular.module('angularjsAuth', [])
       return $window.sessionStorage[authKey];
     }
     
+    this.isLoggedIn = function() {
+      var authKey = "auth-" + key;
+      return Object.keys($window.sessionStorage).length;
+    }
+    
     /**
      * Returns if the current user has the given role
      */
